@@ -96,6 +96,7 @@ const ServicePlans = () => {
       <section className="sp-comparison section" ref={comparisonRef}>
         <div className="container">
           <SectionTitle subtitle="Compare Plans" title="Find the Right Plan for You" />
+          <br />
           
           {/* Tab Switcher */}
           <div className="comparison-tabs">
