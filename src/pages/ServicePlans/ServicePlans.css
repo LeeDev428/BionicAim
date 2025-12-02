@@ -23,7 +23,7 @@
 
 /* Categories */
 .sp-categories {
-  background: #cbd5e1;
+  background: var(--dark-light);
 }
 
 .categories-grid {
@@ -33,7 +33,7 @@
 }
 
 .category-card {
-  background: #e2e8f0;
+  background: var(--dark);
   border-radius: 12px;
   overflow: hidden;
   text-align: center;
@@ -51,16 +51,16 @@
 }
 
 .category-card.highlight {
-  background: #fef3c7;
+  background: rgba(245, 158, 11, 0.2);
 }
 
 .category-image {
   padding: 30px;
-  background: #d1d5db;
+  background: rgba(255, 255, 255, 0.05);
 }
 
 .category-card.highlight .category-image {
-  background: #fde68a;
+  background: rgba(245, 158, 11, 0.3);
 }
 
 .category-icon {
@@ -118,7 +118,7 @@
 }
 
 .comparison-table {
-  background: var(--white);
+  background: var(--dark-light);
   border-radius: 16px;
   overflow: hidden;
   max-width: 800px;
@@ -149,7 +149,7 @@
 }
 
 .table-body .table-row {
-  border-bottom: 1px solid #e2e8f0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .table-row .feature-col,
@@ -160,7 +160,7 @@
 }
 
 .table-row .feature-col {
-  color: var(--dark);
+  color: var(--white);
   font-size: 0.9rem;
 }
 
@@ -169,7 +169,7 @@
 }
 
 .table-row .plan-col.premium {
-  background: rgba(37, 99, 235, 0.05);
+  background: rgba(37, 99, 235, 0.15);
 }
 
 .check {
@@ -191,8 +191,8 @@
 }
 
 .table-footer {
-  background: #f8fafc;
-  border-top: 2px solid #e2e8f0;
+  background: var(--dark);
+  border-top: 2px solid rgba(255, 255, 255, 0.1);
 }
 
 .table-footer .feature-col,
@@ -201,7 +201,7 @@
 }
 
 .table-footer .feature-col {
-  color: var(--dark);
+  color: var(--white);
   font-weight: 600;
 }
 
@@ -212,7 +212,7 @@
 .table-footer .price {
   font-size: 1.5rem;
   font-weight: 700;
-  color: var(--dark);
+  color: var(--primary);
 }
 
 .table-footer .period {
@@ -222,7 +222,7 @@
 }
 
 .table-footer .plan-col.premium {
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(37, 99, 235, 0.2);
 }
 
 .comparison-actions {
