@@ -1,5 +1,5 @@
 .stairlift-service {
-  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
   overflow: hidden;
 }
 
@@ -16,16 +16,16 @@
 }
 
 .stairlift-image-card {
-  background: var(--white);
+  background: var(--dark-light);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
 }
 
 .stairlift-placeholder {
   position: relative;
   height: 400px;
-  background: linear-gradient(180deg, #fdf4e8 0%, #f5e6d3 100%);
+  background: linear-gradient(180deg, var(--dark) 0%, var(--dark-light) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -90,7 +90,7 @@
 .stairlift-icon-wrapper {
   width: 50px;
   height: 50px;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(37, 99, 235, 0.2);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -109,14 +109,14 @@
 
 .stairlift-title {
   font-size: 1.75rem;
-  color: var(--dark);
+  color: var(--white);
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .stairlift-subtitle {
   font-size: 1.75rem;
-  color: var(--dark);
+  color: var(--white);
   font-weight: 700;
 }
 
@@ -129,7 +129,7 @@
 }
 
 .detail-question {
-  color: var(--dark);
+  color: var(--white);
   font-weight: 600;
   margin-bottom: 3px;
 }
@@ -151,11 +151,11 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(37, 99, 235, 0.2);
   padding: 8px 15px;
   border-radius: 20px;
   font-size: 0.85rem;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .badge-item .badge-icon {
@@ -164,7 +164,7 @@
 
 /* Quote Section */
 .quote-section {
-  background: linear-gradient(135deg, #e2e8f0 0%, #f1f5f9 100%);
+  background: linear-gradient(135deg, var(--dark-light) 0%, var(--dark) 100%);
   padding: 80px 0;
   text-align: center;
 }
@@ -178,7 +178,7 @@
 .quote-text {
   font-size: 1.15rem;
   font-style: italic;
-  color: var(--dark);
+  color: var(--white);
   line-height: 1.8;
   margin-bottom: 30px;
 }
