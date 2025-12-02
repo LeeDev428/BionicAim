@@ -118,6 +118,7 @@ const Elevators = () => {
       <section className="elevators-plans section" ref={plansRef}>
         <div className="container">
           <SectionTitle subtitle="Choose Your Plan" title="Service Plans" />
+          <br />
           <div className={`elevator-plans-grid ${plansInView ? 'visible' : ''}`}>
             {elevatorPlans.map((plan, index) => (
               <div 
