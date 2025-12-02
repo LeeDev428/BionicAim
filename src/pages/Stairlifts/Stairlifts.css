@@ -68,6 +68,7 @@
 /* Plans */
 .stairlifts-plans {
   background: var(--dark);
+  text-align: center;
 }
 
 .plans-grid {
@@ -84,6 +85,7 @@
   overflow: hidden;
   opacity: 0;
   color: var(--white);
+  text-align: left;
 }
 
 .plans-grid.visible .plan-card {
