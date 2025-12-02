@@ -24,6 +24,7 @@
 /* Benefits */
 .elevators-benefits {
   background: var(--dark-light);
+  text-align: center;
 }
 
 .benefits-grid {
