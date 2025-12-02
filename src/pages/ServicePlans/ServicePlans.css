@@ -93,6 +93,7 @@
 /* Comparison */
 .sp-comparison {
   background: var(--dark);
+  text-align: center;
 }
 
 .comparison-tabs {
@@ -233,12 +234,14 @@
 /* Benefits */
 .sp-benefits {
   background: var(--dark-light);
+  text-align: center;
 }
 
 .sp-benefits .benefits-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 25px;
+  text-align: left;
 }
 
 .benefit-item {
