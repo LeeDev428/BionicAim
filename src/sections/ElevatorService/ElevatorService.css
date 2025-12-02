@@ -1,5 +1,5 @@
 .elevator-service {
-  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, var(--dark-light) 0%, var(--dark) 100%);
   overflow: hidden;
 }
 
@@ -24,7 +24,7 @@
 .elevator-icon-wrapper {
   width: 50px;
   height: 50px;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(37, 99, 235, 0.2);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -43,14 +43,14 @@
 
 .elevator-title {
   font-size: 1.75rem;
-  color: var(--dark);
+  color: var(--white);
   font-weight: 400;
   margin-bottom: 0;
 }
 
 .elevator-subtitle {
   font-size: 1.75rem;
-  color: var(--dark);
+  color: var(--white);
   font-weight: 700;
 }
 
@@ -82,8 +82,8 @@
   gap: 30px;
   margin-bottom: 30px;
   padding: 20px 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .stat-item {
@@ -108,16 +108,16 @@
 }
 
 .elevator-image-card {
-  background: var(--white);
+  background: var(--dark);
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
 }
 
 .elevator-placeholder {
   position: relative;
   height: 400px;
-  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  background: linear-gradient(180deg, var(--dark-light) 0%, var(--dark) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -150,15 +150,15 @@
 }
 
 .overlay-item {
-  background: var(--white);
+  background: var(--dark-light);
   padding: 8px 16px;
   border-radius: 20px;
   font-size: 0.85rem;
-  color: var(--dark);
+  color: var(--white);
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .overlay-item span {
@@ -170,13 +170,13 @@
   position: absolute;
   bottom: 30px;
   left: -30px;
-  background: var(--white);
+  background: var(--dark-light);
   padding: 15px 20px;
   border-radius: 15px;
   display: flex;
   align-items: center;
   gap: 12px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
   animation: float 3s ease-in-out infinite;
 }
 
@@ -197,7 +197,7 @@
 .card-title {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .card-text {
