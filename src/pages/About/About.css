@@ -1,0 +1,266 @@
+.about-page {
+  padding-top: 80px;
+}
+
+/* Hero Section */
+.about-hero {
+  padding: 60px 0 80px;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
+}
+
+.about-hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-hero-content {
+  opacity: 0;
+}
+
+.hero-label {
+  color: var(--primary);
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about-hero .hero-title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+
+.about-hero .hero-title .highlight {
+  color: var(--primary);
+}
+
+.hero-subtitle {
+  font-size: 1.3rem;
+  color: var(--gray);
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.hero-tagline {
+  color: #f59e0b;
+  font-style: italic;
+}
+
+.about-hero-image {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 4/3;
+  background: var(--dark-light);
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 2px dashed var(--gray);
+}
+
+.image-placeholder span {
+  font-size: 4rem;
+  margin-bottom: 10px;
+}
+
+.image-placeholder p {
+  color: var(--gray);
+}
+
+/* Mission & Vision */
+.mission-vision {
+  background: var(--dark);
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.mv-card {
+  background: var(--dark-light);
+  padding: 40px;
+  border-radius: 16px;
+  opacity: 0;
+}
+
+.mv-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mission-title {
+  color: var(--primary);
+}
+
+.vision-title {
+  color: #f59e0b;
+}
+
+.mv-intro {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.mv-highlight {
+  font-size: 1.05rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.mv-text {
+  color: var(--gray);
+  margin-bottom: 15px;
+  line-height: 1.7;
+}
+
+.text-primary {
+  color: var(--primary);
+}
+
+.mv-quote {
+  color: var(--primary);
+  font-style: italic;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Stats */
+.about-stats {
+  background: var(--dark-light);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.stat-card {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--dark);
+  border-radius: 12px;
+  opacity: 0;
+}
+
+.stats-grid.visible .stat-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.stat-number {
+  display: block;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.stat-label {
+  color: var(--gray);
+  font-size: 0.95rem;
+}
+
+/* Why Choose Us */
+.why-us {
+  background: var(--dark);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.why-card {
+  background: var(--dark-light);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.why-card:hover {
+  transform: translateY(-5px);
+}
+
+.why-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.why-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: var(--gray);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .about-hero .container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-hero-image {
+    order: -1;
+  }
+
+  .about-hero .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .mv-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid,
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .about-hero .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .mv-card {
+    padding: 25px;
+  }
+
+  .stats-grid,
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
