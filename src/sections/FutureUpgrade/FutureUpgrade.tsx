@@ -40,15 +40,6 @@ const FutureUpgrade = () => {
         <div className={`future-visual ${isInView ? 'animate-slideInRight delay-2' : ''}`}>
           <div className="future-image-card">
             <div className="image-placeholder">
-              <div className="placeholder-content">
-                <span className="placeholder-icon">🚐</span>
-                <span className="placeholder-label">Vehicle Lift Control</span>
-              </div>
-              <div className="phone-mockup">
-                <div className="phone-screen">
-                  <span>📱</span>
-                </div>
-              </div>
             </div>
           </div>
           <div className="floating-badge">
