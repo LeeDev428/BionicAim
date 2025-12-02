@@ -1,0 +1,257 @@
+.elevator-service {
+  background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+  overflow: hidden;
+}
+
+.elevator-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.elevator-content {
+  opacity: 0;
+}
+
+.elevator-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.elevator-icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background: rgba(37, 99, 235, 0.1);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.elevator-icon {
+  font-size: 1.5rem;
+}
+
+.elevator-titles {
+  display: flex;
+  flex-direction: column;
+}
+
+.elevator-title {
+  font-size: 1.75rem;
+  color: var(--dark);
+  font-weight: 400;
+  margin-bottom: 0;
+}
+
+.elevator-subtitle {
+  font-size: 1.75rem;
+  color: var(--dark);
+  font-weight: 700;
+}
+
+.elevator-details {
+  margin-bottom: 25px;
+}
+
+.detail-highlight {
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.detail-text {
+  color: var(--gray);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.detail-accent {
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.elevator-stats {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: var(--gray);
+}
+
+.elevator-visual {
+  position: relative;
+  opacity: 0;
+}
+
+.elevator-image-card {
+  background: var(--white);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.1);
+}
+
+.elevator-placeholder {
+  position: relative;
+  height: 400px;
+  background: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.elevator-placeholder .placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.elevator-placeholder .placeholder-icon {
+  font-size: 5rem;
+  opacity: 0.9;
+}
+
+.elevator-placeholder .placeholder-label {
+  color: var(--gray);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.elevator-overlay {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.overlay-item {
+  background: var(--white);
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: var(--dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.overlay-item span {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.floating-card {
+  position: absolute;
+  bottom: 30px;
+  left: -30px;
+  background: var(--white);
+  padding: 15px 20px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.card-icon {
+  font-size: 1.5rem;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--dark);
+}
+
+.card-text {
+  font-size: 0.75rem;
+  color: var(--gray);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .elevator-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .elevator-visual {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  .floating-card {
+    left: 10px;
+  }
+
+  .elevator-stats {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .elevator-title,
+  .elevator-subtitle {
+    font-size: 1.4rem;
+  }
+
+  .elevator-header {
+    flex-direction: column;
+  }
+
+  .elevator-stats {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .stat-item {
+    width: calc(50% - 10px);
+  }
+
+  .elevator-placeholder {
+    height: 300px;
+  }
+
+  .floating-card {
+    bottom: 10px;
+    left: 10px;
+    padding: 10px 15px;
+  }
+}
