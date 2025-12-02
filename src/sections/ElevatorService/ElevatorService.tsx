@@ -55,21 +55,6 @@ const ElevatorService = () => {
         <div className={`elevator-visual ${isInView ? 'animate-slideInRight delay-2' : ''}`}>
           <div className="elevator-image-card">
             <div className="image-placeholder elevator-placeholder">
-              <div className="placeholder-content">
-                <span className="placeholder-icon">🛗</span>
-                <span className="placeholder-label">Home Elevator</span>
-              </div>
-              <div className="elevator-overlay">
-                <div className="overlay-item">
-                  <span>✓</span> Professional Installation
-                </div>
-                <div className="overlay-item">
-                  <span>✓</span> Regular Maintenance
-                </div>
-                <div className="overlay-item">
-                  <span>✓</span> Safety Certified
-                </div>
-              </div>
             </div>
           </div>
           <div className="floating-card">
