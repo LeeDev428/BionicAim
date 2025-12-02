@@ -19,8 +19,8 @@ const Hero = () => {
             safely and comfortably with our innovative mobility solutions.
           </p>
           <div className="hero-buttons">
-            <Button href="#services">Discover our services →</Button>
-            <Button href="#contact" variant="outline">Contact us</Button>
+            <Button href="/service-plans">Discover our services →</Button>
+            <Button href="/contact" variant="outline">Contact us</Button>
           </div>
         </div>
         <div className={`hero-visual ${isInView ? 'animate-slideInRight delay-2' : ''}`}>
