@@ -24,6 +24,7 @@
 /* Categories */
 .sp-categories {
   background: var(--dark-light);
+  text-align: center;
 }
 
 .categories-grid {
