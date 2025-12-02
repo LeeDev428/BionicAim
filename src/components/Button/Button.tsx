@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './Button.css';
 
 interface ButtonProps {
@@ -11,6 +12,15 @@ const Button = ({ children, variant = 'primary', href, onClick }: ButtonProps) =
   const className = `btn btn-${variant}`;
 
   if (href) {
+    // Check if it's an internal link (starts with /)
+    if (href.startsWith('/')) {
+      return (
+        <Link to={href} className={className}>
+          {children}
+        </Link>
+      );
+    }
+    // External link
     return (
       <a href={href} className={className}>
         {children}
