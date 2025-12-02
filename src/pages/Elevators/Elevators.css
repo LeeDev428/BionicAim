@@ -68,6 +68,7 @@
 /* Plans */
 .elevators-plans {
   background: var(--dark);
+  text-align: center;
 }
 
 .elevator-plans-grid {
@@ -84,6 +85,7 @@
   color: var(--white);
   display: flex;
   flex-direction: column;
+  text-align: left;
 }
 
 .elevator-plans-grid.visible .elevator-plan-card {
