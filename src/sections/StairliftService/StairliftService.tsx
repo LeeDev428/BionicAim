@@ -13,10 +13,6 @@ const StairliftService = () => {
           <div className={`stairlift-visual ${isInView ? 'animate-slideInLeft' : ''}`}>
             <div className="stairlift-image-card">
               <div className="image-placeholder stairlift-placeholder">
-                <div className="placeholder-content">
-                  <span className="placeholder-icon">🪜</span>
-                  <span className="placeholder-label">Professional Stairlift</span>
-                </div>
               </div>
             </div>
             <div className="floating-tag">
