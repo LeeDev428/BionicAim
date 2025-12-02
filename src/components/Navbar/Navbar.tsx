@@ -1,34 +1,38 @@
 import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import './Navbar.css';
 
 const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Products', href: '#products' },
-  { name: 'Contact', href: '#contact' },
+  { name: 'Home', path: '/' },
+  { name: 'About', path: '/about' },
+  { name: 'Contact', path: '/contact' },
+  { name: 'Stairlifts', path: '/stairlifts' },
+  { name: 'Residential Elevators', path: '/elevators' },
+  { name: 'Service Plans', path: '/service-plans' },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const location = useLocation();
 
   return (
     <nav className="navbar">
       <div className="container navbar-container">
-        <a href="#home" className="logo">
+        <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
           <span className="logo-text">Bionic</span>
           <span className="logo-highlight">AIM</span>
-        </a>
+        </Link>
 
         <ul className={`nav-links ${isOpen ? 'active' : ''}`}>
           {navLinks.map((link) => (
             <li key={link.name}>
-              <a 
-                href={link.href} 
+              <Link 
+                to={link.path}
+                className={location.pathname === link.path ? 'active' : ''}
                 onClick={() => setIsOpen(false)}
               >
                 {link.name}
-              </a>
+              </Link>
             </li>
           ))}
         </ul>
