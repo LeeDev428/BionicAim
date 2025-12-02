@@ -1,6 +1,6 @@
+import { Link } from 'react-router-dom';
 import { useInView } from '../../hooks/useInView';
 import SectionTitle from '../../components/SectionTitle/SectionTitle';
-import Card from '../../components/Card/Card';
 import './Services.css';
 
 const services = [
@@ -8,21 +8,25 @@ const services = [
     icon: '🪜',
     title: 'Stairlifts',
     description: 'Safe and reliable stairlifts designed for comfort and ease of use in any home.',
+    link: '/stairlifts',
   },
   {
-    icon: '🏠',
+    icon: '🛗',
     title: 'Residential Elevators',
     description: 'Custom home elevators that blend seamlessly with your interior design.',
+    link: '/elevators',
   },
   {
     icon: '🛠️',
     title: 'Service Plans',
     description: 'Comprehensive maintenance and service plans to keep your equipment running smoothly.',
+    link: '/service-plans',
   },
   {
     icon: '📞',
     title: '24/7 Support',
     description: 'Round-the-clock customer support for all your mobility needs.',
+    link: '/contact',
   },
 ];
 
@@ -40,17 +44,17 @@ const Services = () => {
         </div>
         <div className={`services-grid ${isInView ? 'visible' : ''}`}>
           {services.map((service, index) => (
-            <div 
+            <Link 
+              to={service.link}
               key={index} 
-              className="service-item"
+              className="service-card"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
-              <Card 
-                icon={service.icon}
-                title={service.title}
-                description={service.description}
-              />
-            </div>
+              <div className="service-icon">{service.icon}</div>
+              <h3 className="service-title">{service.title}</h3>
+              <p className="service-description">{service.description}</p>
+              <span className="service-link">Learn more →</span>
+            </Link>
           ))}
         </div>
       </div>
