@@ -102,6 +102,7 @@ const Stairlifts = () => {
       <section className="stairlifts-plans section" ref={plansRef}>
         <div className="container">
           <SectionTitle subtitle="Choose Your Plan" title="Service Plans" />
+          <br />
           <div className={`plans-grid ${plansInView ? 'visible' : ''}`}>
             {stairliftPlans.map((plan, index) => (
               <div 
