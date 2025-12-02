@@ -1,0 +1,8 @@
+/* App-level styles - keeping it minimal */
+#root {
+  min-height: 100vh;
+}
+
+main {
+  overflow-x: hidden;
+}
