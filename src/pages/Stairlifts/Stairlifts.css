@@ -24,6 +24,7 @@
 /* Features */
 .stairlifts-features {
   background: var(--dark-light);
+  text-align: center;
 }
 
 .features-grid {
