@@ -4,10 +4,11 @@
 
 .section-title.centered {
   text-align: center;
+  width: 100%;
 }
 
 .section-subtitle {
-  display: inline-block;
+  display: block;
   color: var(--primary);
   font-size: 0.9rem;
   font-weight: 600;
