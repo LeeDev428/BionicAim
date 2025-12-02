@@ -1,0 +1,272 @@
+.stairlifts-page {
+  padding-top: 80px;
+}
+
+/* Hero */
+.stairlifts-hero {
+  padding: 60px 0;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
+  text-align: center;
+}
+
+.stairlifts-hero .hero-content {
+  opacity: 0;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.hero-desc {
+  color: var(--gray);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Features */
+.stairlifts-features {
+  background: var(--dark-light);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: var(--dark);
+  padding: 30px;
+  border-radius: 12px;
+  text-align: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.features-grid.visible .feature-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.feature-card h4 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.feature-card p {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* Plans */
+.stairlifts-plans {
+  background: var(--dark);
+}
+
+.plans-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.plan-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  opacity: 0;
+  color: var(--dark);
+}
+
+.plans-grid.visible .plan-card {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.plan-card.featured {
+  border: 2px solid var(--primary);
+  position: relative;
+}
+
+.plan-card.featured::before {
+  content: 'Recommended';
+  position: absolute;
+  top: 15px;
+  right: -35px;
+  background: var(--primary);
+  color: white;
+  padding: 5px 40px;
+  font-size: 0.75rem;
+  transform: rotate(45deg);
+  z-index: 1;
+}
+
+.plan-image {
+  background: #f1f5f9;
+  padding: 30px;
+}
+
+.plan-image .image-placeholder {
+  width: 100%;
+  height: 150px;
+  background: #e2e8f0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--gray);
+}
+
+.plan-image .image-placeholder span {
+  font-size: 3rem;
+}
+
+.plan-content {
+  padding: 30px;
+}
+
+.plan-id {
+  color: var(--gray);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.plan-name {
+  font-size: 1.4rem;
+  color: var(--primary);
+  margin: 10px 0 15px;
+}
+
+.plan-desc {
+  color: var(--gray);
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.plan-section {
+  margin-bottom: 20px;
+}
+
+.section-title {
+  font-size: 0.95rem;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.section-title.included {
+  color: var(--primary);
+}
+
+.section-title.included::before {
+  content: '☑';
+}
+
+.section-title.not-included {
+  color: #f59e0b;
+}
+
+.section-title.not-included::before {
+  content: '⚠';
+}
+
+.plan-list {
+  font-size: 0.85rem;
+  line-height: 1.8;
+}
+
+.plan-list li {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 5px;
+}
+
+.check {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.x {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.plan-details-link {
+  color: var(--primary);
+  font-size: 0.85rem;
+  text-decoration: underline;
+  margin-bottom: 20px;
+}
+
+.plan-price {
+  margin-bottom: 20px;
+}
+
+.price {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark);
+}
+
+.period {
+  color: var(--gray);
+  font-size: 0.9rem;
+}
+
+/* CTA */
+.stairlifts-cta {
+  background: var(--dark-light);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  color: var(--gray);
+  margin-bottom: 25px;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .plans-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 576px) {
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .plan-content {
+    padding: 20px;
+  }
+
+  .plan-name {
+    font-size: 1.2rem;
+  }
+
+  .cta-content h2 {
+    font-size: 1.5rem;
+  }
+}
