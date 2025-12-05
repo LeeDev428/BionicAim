@@ -87,6 +87,7 @@
   opacity: 0;
   color: var(--white);
   text-align: left;
+  border: 2px solid var(--primary);
 }
 
 .plans-grid.visible .plan-card {
@@ -114,6 +115,13 @@
 .plan-image {
   background: var(--dark);
   padding: 30px;
+}
+
+.plan-img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 8px;
 }
 
 .plan-image .image-placeholder {
