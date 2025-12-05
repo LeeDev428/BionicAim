@@ -1,10 +1,13 @@
 .section-title {
   margin-bottom: 50px;
+  display: flex;
+  flex-direction: column;
 }
 
 .section-title.centered {
   text-align: center;
   width: 100%;
+  align-items: center;
 }
 
 .section-subtitle {
@@ -15,12 +18,15 @@
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 10px;
+  width: 100%;
 }
 
 .section-heading {
+  display: block;
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
+  width: 100%;
 }
 
 @media (max-width: 768px) {
