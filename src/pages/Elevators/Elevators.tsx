@@ -127,10 +127,11 @@ const Elevators = () => {
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 <div className="plan-header">
-                  <div className="plan-image-placeholder">
-                    <span>🛗</span>
-                    <p>Image</p>
-                  </div>
+                  <img 
+                    src={`/img/residential elevators/${plan.id}.png`}
+                    alt={plan.name}
+                    className="plan-img"
+                  />
                 </div>
 
                 <div className="plan-body">
