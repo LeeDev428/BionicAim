@@ -54,8 +54,11 @@ const ElevatorService = () => {
         
         <div className={`elevator-visual ${isInView ? 'animate-slideInRight delay-2' : ''}`}>
           <div className="elevator-image-card">
-            <div className="image-placeholder elevator-placeholder">
-            </div>
+            <img 
+              src="/img/hero/Expert Residential Elevator Service and Repair.png" 
+              alt="Expert Residential Elevator Service and Repair"
+              className="elevator-image"
+            />
           </div>
           <div className="floating-card">
             <span className="card-icon">🔧</span>
