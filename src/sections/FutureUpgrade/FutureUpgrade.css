@@ -1,5 +1,5 @@
 .future-upgrade {
-  background: linear-gradient(135deg, #e6edeb 0%, #e2e8f0 100%);
+  background: linear-gradient(135deg, var(--dark) 0%, var(--dark-light) 100%);
   overflow: hidden;
 }
 
@@ -8,6 +8,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  padding: 0 15px;
 }
 
 .future-content {
@@ -24,7 +25,7 @@
 .future-icon-wrapper {
   width: 50px;
   height: 50px;
-  background: rgba(37, 99, 235, 0.1);
+  background: rgba(37, 99, 235, 0.2);
   border-radius: 12px;
   display: flex;
   align-items: center;
@@ -37,17 +38,17 @@
 
 .future-title {
   font-size: 2rem;
-  color: var(--dark);
+  color: var(--white);
   font-weight: 400;
 }
 
 .future-title .highlight {
   font-weight: 700;
-  color: var(--dark);
+  color: var(--white);
 }
 
 .future-text {
-color: var(--dark-light);
+  color: var(--gray);
   font-size: 1rem;
   line-height: 1.7;
   margin-bottom: 25px;
@@ -69,7 +70,7 @@ color: var(--dark-light);
   display: flex;
   align-items: center;
   gap: 10px;
-  color: var(--dark);
+  color: var(--white);
   font-size: 0.95rem;
 }
 
@@ -88,6 +89,13 @@ color: var(--dark-light);
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.future-video {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
 }
 
 .image-placeholder {
@@ -177,16 +185,28 @@ color: var(--dark-light);
 
   .future-visual {
     order: -1;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .floating-badge {
-    right: 0;
+    right: 10px;
+    top: 15px;
+    font-size: 0.75rem;
+    padding: 8px 15px;
   }
 }
 
 @media (max-width: 576px) {
+  .future-upgrade {
+    padding: 60px 0;
+  }
+
+  .future-container {
+    padding: 0;
+  }
+
   .future-title {
     font-size: 1.5rem;
   }
@@ -196,7 +216,26 @@ color: var(--dark-light);
     align-items: flex-start;
   }
 
+  .future-content {
+    padding: 0 5px;
+  }
+
   .image-placeholder {
-    height: 280px;
+    height: 250px;
+  }
+
+  .future-video {
+    height: 250px;
+  }
+
+  .future-image-card {
+    border-radius: 12px;
+  }
+
+  .floating-badge {
+    right: 5px;
+    top: 10px;
+    font-size: 0.7rem;
+    padding: 6px 12px;
   }
 }
