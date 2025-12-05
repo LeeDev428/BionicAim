@@ -56,8 +56,17 @@
 }
 
 .category-image {
-  padding: 30px;
+  padding: 20px;
   background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
 }
 
 .category-card.highlight .category-image {
