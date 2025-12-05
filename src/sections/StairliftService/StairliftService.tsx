@@ -12,8 +12,11 @@ const StairliftService = () => {
         <div className="container stairlift-container">
           <div className={`stairlift-visual ${isInView ? 'animate-slideInLeft' : ''}`}>
             <div className="stairlift-image-card">
-              <div className="image-placeholder stairlift-placeholder">
-              </div>
+              <img 
+                src="/img/hero/Professional Stairlift Service and Repairs.png" 
+                alt="Professional Stairlift Service and Repairs"
+                className="stairlift-image"
+              />
             </div>
             <div className="floating-tag">
               <span className="tag-icon">⭐</span>
