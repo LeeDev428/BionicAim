@@ -8,6 +8,7 @@
   grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
+  padding: 0 15px;
 }
 
 .stairlift-visual {
@@ -20,6 +21,14 @@
   border-radius: 20px;
   overflow: hidden;
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
+.stairlift-image {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: contain;
+  display: block;
 }
 
 .stairlift-placeholder {
@@ -209,19 +218,35 @@
   }
 
   .stairlift-visual {
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
+    padding: 0 10px;
   }
 
   .floating-tag {
-    right: 0;
+    right: 10px;
+    top: 15px;
+    font-size: 0.75rem;
+    padding: 8px 15px;
   }
 }
 
 @media (max-width: 576px) {
+  .stairlift-service {
+    padding: 60px 0;
+  }
+
+  .stairlift-container {
+    padding: 0;
+  }
+
+  .stairlift-content {
+    padding: 0 5px;
+  }
+
   .stairlift-title,
   .stairlift-subtitle {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   .stairlift-header {
@@ -229,16 +254,31 @@
   }
 
   .stairlift-placeholder {
-    height: 300px;
+    height: 250px;
+  }
+
+  .stairlift-image {
+    max-height: 350px;
+  }
+
+  .stairlift-image-card {
+    border-radius: 12px;
   }
 
   .stairlift-badges {
-    gap: 10px;
+    gap: 8px;
   }
 
   .badge-item {
     padding: 6px 12px;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
+  }
+
+  .floating-tag {
+    right: 5px;
+    top: 10px;
+    font-size: 0.65rem;
+    padding: 6px 10px;
   }
 
   .quote-text {
@@ -248,5 +288,15 @@
 
   .quote-section {
     padding: 60px 0;
+  }
+
+  .detail-item {
+    display: block;
+  }
+
+  .detail-question,
+  .detail-answer {
+    display: block;
+    width: 100%;
   }
 }
