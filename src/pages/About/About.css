@@ -56,6 +56,14 @@
   justify-content: center;
 }
 
+.about-image {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+}
+
 .image-placeholder {
   width: 100%;
   max-width: 400px;
@@ -226,6 +234,10 @@
 
   .about-hero-image {
     order: -1;
+  }
+
+  .about-image {
+    max-width: 350px;
   }
 
   .about-hero .hero-title {
