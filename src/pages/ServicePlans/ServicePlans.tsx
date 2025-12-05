@@ -5,11 +5,11 @@ import Button from '../../components/Button/Button';
 import './ServicePlans.css';
 
 const deviceCategories = [
-  { id: 'stairlift', name: 'Stairlift', icon: '🪜', link: '/stairlifts', desc: 'Service Plan' },
-  { id: 'elevator', name: 'Elevator', icon: '🛗', link: '/elevators', desc: 'Service Plan' },
-  { id: 'wheelchair', name: 'Wheelchair Lift', icon: '♿', link: '/contact', desc: 'Service Plan' },
-  { id: 'remote', name: 'Remote Control', icon: '🎮', link: '/contact', desc: 'Upgrade' },
-  { id: 'questions', name: 'Questions?', icon: '❓', link: '/contact', desc: 'We are here for you!', highlight: true },
+  { id: 'stairlift', name: 'Stairlift', image: '/img/service plan/stairlift.png', link: '/stairlifts', desc: 'Service Plan' },
+  { id: 'elevator', name: 'Elevator', image: '/img/service plan/elevator.png', link: '/elevators', desc: 'Service Plan' },
+  { id: 'wheelchair', name: 'Wheelchair Lift', image: '/img/service plan/wheelchair lift.png', link: '/contact', desc: 'Service Plan' },
+  { id: 'remote', name: 'Remote Control', image: '/img/service plan/remote control.png', link: '/contact', desc: 'Upgrade' },
+  { id: 'questions', name: 'Questions?', image: '/img/service plan/questions.png', link: '/contact', desc: 'We are here for you!', highlight: true },
 ];
 
 const ServicePlans = () => {
@@ -80,7 +80,7 @@ const ServicePlans = () => {
                 style={{ animationDelay: `${index * 0.1}s` }}
               >
                 <div className="category-image">
-                  <span className="category-icon">{category.icon}</span>
+                  <img src={category.image} alt={category.name} className="category-img" />
                 </div>
                 <div className="category-info">
                   <h3 className={category.highlight ? 'highlight-text' : ''}>{category.name}</h3>
