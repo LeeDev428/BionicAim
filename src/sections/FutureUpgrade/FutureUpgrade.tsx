@@ -39,8 +39,15 @@ const FutureUpgrade = () => {
         </div>
         <div className={`future-visual ${isInView ? 'animate-slideInRight delay-2' : ''}`}>
           <div className="future-image-card">
-            <div className="image-placeholder">
-            </div>
+            <video 
+              className="future-video"
+              autoPlay 
+              muted 
+              loop 
+              playsInline
+            >
+              <source src="/img/hero/Upgrading to the future.mp4" type="video/mp4" />
+            </video>
           </div>
           <div className="floating-badge">
             <span className="badge-icon">⚡</span>
