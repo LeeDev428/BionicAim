@@ -29,10 +29,11 @@ const About = () => {
             <p className="hero-tagline">Proudly serving the bay area since 2005.</p>
           </div>
           <div className={`about-hero-image ${heroInView ? 'animate-slideInRight delay-2' : ''}`}>
-            <div className="image-placeholder">
-              <span>🏢</span>
-              <p>Team Image</p>
-            </div>
+            <img 
+              src="/img/about/WHEELCHAIR LIFT & RAMP SERVICE AND REPAIR.png" 
+              alt="Wheelchair Lift & Ramp Service and Repair"
+              className="about-image"
+            />
           </div>
         </div>
       </section>
