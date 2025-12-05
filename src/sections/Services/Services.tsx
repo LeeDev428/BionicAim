@@ -38,8 +38,8 @@ const Services = () => {
       <div className="container" ref={ref}>
         <div className={isInView ? 'animate-fadeInUp' : ''} style={{ opacity: isInView ? 1 : 0 }}>
           <SectionTitle 
-            subtitle="Our Services" 
-            title="What We Offer" 
+            subtitle="What We Offer" 
+            title="Our Services" 
           />
         </div>
         <div className={`services-grid ${isInView ? 'visible' : ''}`}>
